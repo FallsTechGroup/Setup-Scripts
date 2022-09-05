@@ -15,7 +15,7 @@ yum install zabbix zabbix-agent -y
 
 # Download Zabbix Setup File & Replace
 cd /etc/zabbix
-sed -i 's/Server=/Server=143.198.238.10/g' zabbix_agentd.conf
+sed -i 's/Server=127.0.0.1/Server=143.198.238.10/g' zabbix_agentd.conf
 sed -i 's/# EnableRemoteCommands=0/EnableRemoteCommands=1/g' zabbix_agentd.conf
 
 # Start Zabbix Agent
